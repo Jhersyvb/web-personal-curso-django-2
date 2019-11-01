@@ -43,14 +43,14 @@
     </nav>
 
     <!-- Cabecera -->
-    <header class="masthead" style="background-image: url({% static 'core/img/home-bg.jpg' %})">
+    <header class="masthead" style="background-image: url({% block background %}{% endblock background %})">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Jhersy Valer Bejarano</h1>
-              <span class="subheading">Backend Developer</span>
+              {% block headers %}
+              {% endblock headers %}
             </div>
           </div>
         </div>
